@@ -1,0 +1,37 @@
+.family-person-form {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.form-section {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.form-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.form-table th {
+    width: 150px;
+}
+
+#maiden-name-row input[type="text"] {
+    width: 100%;
+}
+
+#spouses, #children {
+    height: 100px;
+}
+
+#died_unknown + span {
+    margin-left: 5px;
+}
