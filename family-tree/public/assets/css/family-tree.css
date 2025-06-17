@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
+#FamilyChart {
+  height: 60vh;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+#FamilyChart svg {
+    width: 100%;
+    height: 100%;
+}
+
+#FamilyChart .cursor-pointer {
+  cursor: pointer;
+}
+#FamilyChart svg.main_svg {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  color: #3b5560;
+}
+#FamilyChart svg.main_svg text {
+  fill: currentColor;
+  font-weight:600;
+}
+
+#FamilyChart rect.card-female {
+  fill: lightpink;
+}
+#FamilyChart rect.card-male {
+  fill: lightblue;
+}
+
+#FamilyChart .card-female .card-body-rect,
+#FamilyChart .card-female .text-overflow-mask {
+  fill: white;
+  cursor:pointer;
+}
+#FamilyChart .card-female:hover .card-body-rect,
+#FamilyChart .card-female:hover .text-overflow-mask {
+  fill: lightpink;
+}
+
+#FamilyChart .card-male .card-body-rect,
+#FamilyChart .card-male .text-overflow-mask {
+  fill: white;
+  cursor:pointer;
+}
+#FamilyChart .card-male:hover .card-body-rect,
+#FamilyChart .card-male:hover .text-overflow-mask {
+  fill: lightblue;
+}
+#FamilyChart .card-female .card-outline {
+  stroke: lightpink;
+  stroke-width:3;
+}
+#FamilyChart .card-male .card-outline {
+  stroke: lightblue;
+  stroke-width:3;
+}
+#FamilyChart .card-genderless .card-body-rect,
+#FamilyChart .card-genderless .text-overflow-mask {
+  fill: lightgray;
+}
+#FamilyChart .card_add .card-body-rect {
+  fill: #3b5560;
+  stroke-width: 4px;
+  stroke: #fff;
+  cursor: pointer;
+}
+#FamilyChart g.card_add text {
+  fill: #fff;
+}
+#FamilyChart .card-main {
+  stroke: #000;
+}
+#FamilyChart .card_family_tree rect {
+  transition: 0.3s;
+}
+#FamilyChart .card_family_tree:hover rect {
+  transform: scale(1.1);
+}
+#FamilyChart .card_add_relative {
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+#FamilyChart .card_add_relative circle {
+  fill: rgba(0, 0, 0, 0);
+}
+#FamilyChart .card_add_relative:hover {
+  color: black;
+}
+#FamilyChart .card_edit.pencil_icon {
+  color: #fff;
+  transition: 0.3s;
+}
+#FamilyChart .card_edit.pencil_icon:hover {
+  color: black;
+}
+#FamilyChart .card_break_link,
+#FamilyChart .link_upper,
+#FamilyChart .link_lower,
+#FamilyChart .link_particles {
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+#FamilyChart .card_break_link {
+  color: #000;
+}
+#FamilyChart .card_break_link.closed .link_upper {
+  transform: translate(-140.5px, 655.6px);
+}
+#FamilyChart .card_break_link.closed .link_upper g {
+  transform: rotate(-58deg);
+}
+#FamilyChart .card_break_link.closed .link_particles {
+  transform: scale(0);
+}
+#FamilyChart .input-field input {
+  height: 2.5rem !important;
+}
+#FamilyChart .input-field > label:not(.label-icon).active {
+  -webkit-transform: translateY(-8px) scale(0.8);
+  transform: translateY(-8px) scale(0.8);
+}
+
